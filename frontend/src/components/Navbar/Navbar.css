@@ -13,6 +13,10 @@
     cursor: pointer;
     /* use outfit google fonnt   */
 }
+.logo{
+    height: 55px;
+    width: 200px;
+}
 .navbar-right{
     display: flex;
     align-items: center;
