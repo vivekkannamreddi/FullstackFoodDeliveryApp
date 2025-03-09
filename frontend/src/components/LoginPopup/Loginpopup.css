@@ -42,5 +42,30 @@
     border-radius: 4px;
 }
 .login-popup-container button{
-    
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+.login-popup-condition input{
+    margin-top: 3px;
+}
+.login-popup p span{
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
 }
