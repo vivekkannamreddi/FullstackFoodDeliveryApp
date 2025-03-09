@@ -1,0 +1,7 @@
+ config == to store the configuration files of the database ;
+ models == store the models of mongodb 
+ middleware == stores all the middleware
+ controler == adds the logic for the backend
+ routes ==
+ upload == images 
+ env == stores all the environment variables
