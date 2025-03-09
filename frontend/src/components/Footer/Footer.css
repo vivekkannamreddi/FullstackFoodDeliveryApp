@@ -10,6 +10,9 @@
     padding-top: 80px;
     margin-top: 100px;
 }
+.footer-left img{
+    width: 200px;
+}
 .footer-content{
     width: 100%;
     display: grid;
@@ -31,8 +34,10 @@
 .footer-center h2 , .footer-right h2{
     color: white;
 }
+
 .icons img{
     padding-right: 15px;
+    width: 50px;
 }
 .footer hr{
     width: 100%;
@@ -40,4 +45,17 @@
     margin: 20px 0;
     background-color: grey;
     border: none;
+}
+
+
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footercopyrights{
+        text-align: center;
+    }
+    
 }

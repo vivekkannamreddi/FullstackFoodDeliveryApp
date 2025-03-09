@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import Home from './pages/home/home'
 import Cart from './pages/cart/Cart'

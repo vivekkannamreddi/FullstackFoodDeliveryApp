@@ -24,7 +24,7 @@
     display: none;
 }
 .explore-menu-list-item{
-    min-width: 80px;
+    min-width: 100px;
     width: 7.5vw;
     cursor: pointer;
     border-radius: 50%;
@@ -47,4 +47,12 @@
     padding: 2px;
     border-radius: 50%;
     transition: 0.1s;
+}
+
+@media (max-width:1050px){
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+    
 }
