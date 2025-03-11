@@ -98,7 +98,10 @@
 
 
 @media (max-width:750px){
-   
+    .logo{
+        width: 100px;
+        
+    }
     .navbar-menu{
         display: none;
     }
