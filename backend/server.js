@@ -16,8 +16,7 @@ app.use(cors()); // to allow cross origin request     or     we can access the b
 connectDB();
 
 //api endpoint 
-
-    app.use('/api/food',foodrouter);
+app.use('/api/food',foodrouter);
 
 app.get('/',(req,res)=>{
     res.send("API Working")
