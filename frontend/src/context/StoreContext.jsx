@@ -10,22 +10,33 @@ const StoreContextProvider = (props)=>{
     const [cartItems,setCartItems] = useState({});
     const url = 'http://localhost:3000';
     const [token , setToken] = useState("");
+
+        
     const [food_list,setFoodList] = useState([])
 
-    const addtocart=(itemId)=>{
+    const addtocart= async(itemId)=>{
         if(!cartItems[itemId]){
             setCartItems((prev)=>({...prev,[itemId]:1}))
         }
         else{
             setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         }
+        if(token){
+            await axios.post(url+"/api/cart/add",{itemId},{headers:{token}});
+            await fetchCartData(); 
+        }
     }
-    const removefromcart=(itemId)=>{
+    const removefromcart=async (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+        if(token){
+            await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}});
+            await fetchCartData(); 
+        }
+        
     }
 
         const getTotalCartAmount=()=>{
-            let totalAmount=0;
+            let totalAmount=0; 
             
             for(const item in cartItems){
                 if(cartItems[item]>0){
@@ -40,17 +51,21 @@ const StoreContextProvider = (props)=>{
             const response = await axios.get(url+"/api/food/list");
             setFoodList(response.data.data);
         }
-
+        const loadcartdata = async(token)=>{
+            const response = await axios.post(url+'/api/cart/get',{},{headers:{token}});
+            setCartItems(response.data.cartdata);
+        }
         useEffect(()=>{
             
             async function loadData(){
                 await fetchFoodList();
                 if(localStorage.getItem("token")){
                     setToken(localStorage.getItem("token"));
+                    await loadcartdata(localStorage.getItem("token"))
                 }
             }
             loadData()
-        })
+        },[])
 
 
     const Contextvalue ={
@@ -74,4 +89,4 @@ const StoreContextProvider = (props)=>{
         </StoreContext.Provider>
     )
 }
-export default StoreContextProvider;
+export default StoreContextProvider;    
