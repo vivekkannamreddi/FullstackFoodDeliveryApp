@@ -1,81 +1,88 @@
-🍔 Food Delivery App
+## 🍔 Food Delivery App
 
-📌 Project Overview
+### 📌 Project Overview
 
-The Food Delivery App is a modern web application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It provides users with an intuitive interface to browse food items, add them to the cart, and place orders. The project also includes features like category filtering, a shopping cart system, and dynamic UI updates using React Context API.
+The **Food Delivery App** is a modern web application built using the **MERN stack** (MongoDB, Express.js, React, and Node.js). It provides users with an intuitive interface to browse food items, add them to the cart, and place orders. The project also includes features like **category filtering, a shopping cart system, and dynamic UI updates using React Context API**.
 
-🚀 Features
+<br>
 
-User Interface: Clean and responsive UI using React & CSS.
+### 🚀 Features
 
-Food Listing: Displays a list of food items with images, descriptions, and prices.
+- **User Interface:** Clean and responsive UI using React & CSS.<br>
+- **Food Listing:** Displays a list of food items with images, descriptions, and prices.<br>
+- **Category Filtering:** Allows users to filter food items based on categories.<br>
+- **Add to Cart & Remove from Cart:** Users can add food items to the cart and remove them as needed.<br>
+- **Cart Management:** Keeps track of the total quantity and price of items in the cart.<br>
+- **Order Placement:** Users can proceed to checkout and place orders.<br>
+- **Context API for State Management:** Global state for cart operations and food list.<br>
 
-Category Filtering: Allows users to filter food items based on categories.
+<br>
 
-Add to Cart & Remove from Cart: Users can add food items to the cart and remove them as needed.
+### 🛠️ Tech Stack
 
-Cart Management: Keeps track of the total quantity and price of items in the cart.
+- **Frontend:** React.js, CSS<br>
+- **State Management:** React Context API<br>
+- **Routing:** React Router<br>
+- **Backend:** Node.js, Express.js (if implemented)<br>
+- **Database:** MongoDB (if implemented)<br>
 
-Order Placement: Users can proceed to checkout and place orders.
+<br>
 
-Context API for State Management: Global state for cart operations and food list.
+### 💂🏽‍ Folder Structure
 
-🛠️ Tech Stack
-
-Frontend: React.js, CSS
-
-State Management: React Context API
-
-Routing: React Router
-
-Backend: Node.js, Express.js (if implemented)
-
-Database: MongoDB (if implemented)
-
-📂 Folder Structure
-
+```
 📦 food-delivery-app
 ├── 📁 src
-│   ├── 📁 assets            # Static assets (images, icons, etc.)
-│   ├── 📁 components        # Reusable UI components (Navbar, Footer, etc.)
-│   ├── 📁 context           # Context API for global state
-│   ├── 📁 pages             # Pages (Home, Cart, Order)
-│   ├── 📁 styles            # CSS files for styling
-│   ├── App.jsx              # Main React component
-│   ├── index.js             # React entry file
-│
-├── 📄 package.json          # Dependencies and scripts
-├── 📄 README.md             # Project documentation
-└── 📄 .gitignore            # Git ignore file
+│   ├── 📁 assets        # Static assets (images, icons, etc.)
+│   ├── 📁 components    # Reusable UI components (Navbar, Footer, etc.)
+│   ├── 📁 context       # Context API for global state
+│   ├── 📁 pages         # Pages (Home, Cart, Order)
+│   ├── 📁 styles        # CSS files for styling
+│   ├── App.jsx         # Main React component
+│   ├── index.js        # React entry file
+│   ├── 📄 package.json  # Dependencies and scripts
+├── 📄 README.md        # Project documentation
+└── 📄 .gitignore       # Git ignore file
+```
 
+<br>
 
+### 🔧 Setup & Installation
 
-🔧 Setup & Installation
-
-1️⃣ Clone the Repository
+#### 1️⃣ Clone the Repository
+```sh
 git clone https://github.com/your-username/food-delivery-app.git
 cd food-delivery-app
+```
 
-2️⃣ Install Dependencies
-npm intall
+#### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-3️⃣ Start the Development Server
+#### 3️⃣ Start the Development Server
+```sh
 npm start
+```
+
+<br>
+
+### ⚡ Future Improvements
+
+✅ User authentication (Login/Signup)<br>
+✅ Payment gateway integration<br>
+✅ Backend integration with MongoDB and Express.js<br>
+
+<br>
+
+### 👨‍💻 Author
+
+**Vivekkannamreddy** - Full Stack Developer of the Food Delivery App
+
+<br>
+
+### 📝 License
+
+This project is licensed under the **MIT License**.
 
 
-
-⚡ Future Improvements
-
-✅ User authentication (Login/Signup)
-
-✅ Payment gateway integration
-
-✅ Backend integration with MongoDB and Express.js
-
-👨‍💻 Author
-
-Vivekkannamreddy - Full Stack Developer of the Food Delivery App
-
-📝 License
-
-This project is licensed under the MIT License.
