@@ -5,6 +5,7 @@
     position: relative;
     background-image: url('/header_img.png');
     background-repeat: no-repeat;
+    /* background-color: linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);  */
     
 }
 .header-contents{
@@ -12,11 +13,12 @@
     flex-direction: column;
     display: flex;
     align-items: start;
-    max-width: 50%;
+    max-width: 60%;
     gap:1.5rem;
     bottom: 10%;
     left: 6vw;
     animation: fadein 3s;
+    /* background-color: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);  */
 }
 .header-contents h2{
     font-weight: 500;

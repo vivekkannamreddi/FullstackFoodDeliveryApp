@@ -135,10 +135,14 @@
 @media (max-width:750px){
     .logo{
         width: 100px;
+        height: 40px;
         
     }
     .navbar-menu{
         display: none;
+    }
+    .navbar button{
+        font-size: 13px;
     }
     
 }
