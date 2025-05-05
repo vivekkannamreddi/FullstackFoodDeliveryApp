@@ -39,4 +39,3 @@ app.listen(port , ()=>{
     console.log(`server is running on http://localhost:${port}...`)
 })
 
-//mongodb+srv://vivekkannamreddi:<db_password>@cluster0.796yy.mongodb.net/?
