@@ -8,7 +8,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeorder = async(req,res)=>{
 
-    const frontendURL="http://localhost:5174";
+    const frontendURL="https://your-render-backend.onrender.com/api/data"
+
     try{
         const neworder = new orderModel({
             userId:req.body.userId,
