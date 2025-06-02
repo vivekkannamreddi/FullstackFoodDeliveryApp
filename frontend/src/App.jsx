@@ -3,6 +3,10 @@ import Home from './pages/home/Home.jsx'
 import Cart from './pages/cart/Cart.jsx'
 import Order from './pages/placeorder/Order.jsx'
 import Verify from './pages/verify/Verify.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
+import { Router,Routes,Route } from 'react-router-dom'
+import Myorders from './pages/myorders/Myorders.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 function App(){
   const [showlogin , setShowlogin] = useState(false);
