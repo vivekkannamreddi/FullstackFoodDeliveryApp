@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import { Router,Routes,Route } from 'react-router-dom'
 import Myorders from './pages/myorders/Myorders.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Loginpopup from './components/LoginPopup/Loginpopup.jsx'
 
 function App(){
   const [showlogin , setShowlogin] = useState(false);

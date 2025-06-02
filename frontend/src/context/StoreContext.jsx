@@ -23,14 +23,14 @@ const StoreContextProvider = (props)=>{
         }
         if(token){
             await axios.post(url+"/api/cart/add",{itemId},{headers:{token}});
-            await fetchCartData(); 
+            // await fetchCartData(); 
         }
     }
     const removefromcart=async (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         if(token){
             await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}});
-            await fetchCartData(); 
+            // await fetchCartData(); 
         }
         
     }
