@@ -1,4 +1,10 @@
+import { useState } from 'react'
+import Home from './pages/home/Home.jsx'
+import Cart from './pages/cart/Cart.jsx'
+import Order from './pages/placeorder/Order.jsx'
+import Verify from './pages/verify/Verify.jsx'
 
+function App(){
   const [showlogin , setShowlogin] = useState(false);
   return (
     <>
@@ -20,6 +26,6 @@
     
   )
 
-
+}
 export default App
 
