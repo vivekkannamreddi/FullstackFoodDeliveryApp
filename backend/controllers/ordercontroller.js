@@ -11,7 +11,7 @@ const placeorder = async(req,res)=>{
     const frontendURL="https://your-render-backend.onrender.com/api/data"
 
     try{
-        const neworder = new orderModel({
+        const neworder = new orderModel({           
             userId:req.body.userId,
             items:req.body.items,
             amount:req.body.amount,
